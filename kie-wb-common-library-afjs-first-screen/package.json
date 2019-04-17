@@ -13,7 +13,8 @@
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx,js,jsx}'",
     "test": "jest --silent",
     "init": "yarn install",
-    "build": "yarn run lint && yarn test && webpack --mode production"
+    "build": "yarn run lint && yarn test && webpack --mode production",
+    "live-reload-on": "sh -c 'mvn clean install && find ${0} | grep kie-wb-common-library-afjs-first-screen-bundle.js | grep -v target | xargs -I{} cp dist/kie-wb-common-library-afjs-first-screen-bundle.js {}'"
   },
   "babel": {
     "presets": [

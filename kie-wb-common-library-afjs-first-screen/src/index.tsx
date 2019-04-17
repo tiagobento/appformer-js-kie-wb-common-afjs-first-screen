@@ -17,25 +17,4 @@
 import * as React from "react";
 import * as AppFormer from "appformer-js";
 
-export class AfjsFirstScreen extends AppFormer.Screen {
-
-  constructor() {
-    super("AfjsFirstScreen");
-    this.af_isReact = true;
-    this.af_componentTitle = "AppFormer.js First Screen";
-  }
-
-  public af_onOpen(): void {
-    // TODO
-  }
-
-  public af_onClose(): void {
-    // TODO
-  }
-
-  public af_componentRoot(): AppFormer.Element {
-    return <div />;
-  }
-}
-
-AppFormer.register(new AfjsFirstScreen());
+//TODO
